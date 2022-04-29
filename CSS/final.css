@@ -215,3 +215,23 @@ form {
   height: 40px;
   width: 40px;
 }
+
+.social-container a:hover {
+  background-color: #667eea;
+}
+.fa-linkedin-in:hover {
+  color: blue;
+  font-size: x-large;
+}
+.fa-facebook-f:hover {
+  color: blue;
+  font-size: x-large;
+}
+
+.fa-google-plus-g:hover {
+  color: red;
+  border-radius: 50%;
+
+  font-size: x-large;
+}
+
