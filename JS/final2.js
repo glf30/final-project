@@ -80,7 +80,7 @@ document.querySelector("#modal-trigger").addEventListener("click", () => {
 document.querySelector("#section-change").addEventListener("click", () => {
   let nameToChange = document.querySelector("#modal-input").value;
 
-  // Apply changes if dropdown selection and input is not empty
+  // Apply changes if dropdown selection and input are not empty
   if (nameToChange && selectedSection) {
     let savedSections = JSON.parse(localStorage.getItem("savedSections"));
     savedSections[selectedIndex].sectionName = nameToChange;
@@ -93,7 +93,7 @@ document.querySelector("#section-change").addEventListener("click", () => {
   document.querySelector("#dropdown-trigger").innerHTML = "Select section";
 });
 
-// Function is called when I want to get data from LocalStorage objects and put in variables
+// Function is called when user wants to get data from LocalStorage objects and put in variables
 function getSite() {
   let savedSites = JSON.parse(localStorage.getItem("savedSites")); // Take object with sites and parse it to a string
 
@@ -109,7 +109,7 @@ function getSite() {
   }
 }
 
-// Function allow me save data from input fields into an object in LocalStorage
+// Function to allow to save data from input fields into an object in LocalStorage
 function saveSite(urlName, domainName, setId) {
   // Save input values in an object
   let sitesObject = {
@@ -118,7 +118,7 @@ function saveSite(urlName, domainName, setId) {
     id: setId,
   };
 
-  // Check if local storage exist
+  // Check if local storage exists
   if (localStorage.getItem("savedSites") === null) {
     let savedSites = []; // If not exist will init a new array
     savedSites.push(sitesObject); // Add new object to the existing object array
@@ -203,7 +203,7 @@ function saveSections(sectionsArray) {
   let sectionTwoSave;
   let savedSections = [];
 
-  // Array never will be empty so is not necessary to use if conditional to check if Local Storage is empty
+  // Array will never be empty so is not necessary to use if conditional to check if Local Storage is empty
   for (const i in sectionsArray) {
     sectionTwoSave = {
       sectionName: sectionsArray[i], // Save each section header in a object

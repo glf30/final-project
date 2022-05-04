@@ -94,7 +94,7 @@ var loginVar = [
         loggedInStatusStr = JSON.stringify(loggedInStatusObj);
         localStorage.setItem("last-logged-in", loggedInStatus);
         localStorage.setItem("last-logged-in-user", fullName);
-        window.location.href = "final2.html";
+        window.location.href = "index2.html";
       } else if (
         usernameField != "" &&
         usernameField == loginVar[i].userName &&
@@ -207,7 +207,7 @@ var loginVar = [
     loggedInStatusStr = JSON.stringify(loggedInStatusObj);
     localStorage.setItem("last-logged-in", loggedInStatus);
     localStorage.setItem("last-logged-in-user", fullName);
-    window.location.href = "final2.html";
+    window.location.href = "index2.html";
   }
   
   // if logout button is clicked this function will run.
